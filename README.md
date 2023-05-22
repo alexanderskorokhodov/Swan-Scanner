@@ -11,3 +11,6 @@
   Stepan Visotsky (ML Scientist)
   
   Polina Nazarova (ML Scientist)
+
+## Needs to be installed 
+[CP.h5](https://disk.yandex.com/d/QUU9d35wP3b7cQ)
