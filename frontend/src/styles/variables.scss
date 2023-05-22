@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../../public/fonts/Spartan.ttf') format('truetype');
+}
+  
+
+// spasing
+$spasing-md: 16px;
+$spasing-lg: 32px;
+
+//border radius
+$borderRadius: 11px;
+
+//header height
+$headerHeight: 100px;
+
+@mixin breakpoint($points) {
+    @if $points == md {
+        // 768 px
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+}
+
+// colors
+$theme-bg:  #EDEEF0;
+$claster-bg: #FFFFFF;
+$gray-border: #DCE1E5;
+$text-black: #2C2D2E;
+$text-gray: #6D7885;
+$text-white: #FFF;
+$input-bg: #EBEDF0;
+$input-color: #818C99;
+$vk-blue: #2688EB;

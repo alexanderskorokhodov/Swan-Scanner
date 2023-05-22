@@ -1,0 +1,215 @@
+@import "../styles/variables.scss";
+
+.App {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  a {
+    text-decoration: none;
+  }
+
+  .app {
+    margin: 5em;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    .main {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 90%;
+      .left {
+        border: $gray-border 1px solid;
+        height: 100%;
+        margin-right: 5em;
+        border-radius: 6px;
+        flex: 1;
+        padding: 3em;
+
+        width: 100%;
+        background: $claster-bg;
+        overflow: hidden;
+        .searchBar {
+          margin-bottom: 1em;
+          display: flex;
+          flex-direction: row;
+          .search {
+            font-size: 20px;
+            flex: 4;
+            margin-right: 3em;
+            height: 50px;
+            width: 100%;
+            text-indent: 2em;
+            background: $input-bg;
+            border-radius: 8px;
+            border: none;
+            color: $input-color;
+          }
+          .sort {
+            border: none;
+            border-radius: 8px;
+            background: $vk-blue;
+            appearance: none;
+            flex: 1;
+            background-color: $vk-blue;
+            background-position: right 0.7em top 50%, 0 0;
+            background-repeat: no-repeat, repeat;
+            background-size: 0.65em auto, 100%;
+            box-sizing: border-box;
+            color: $text-white;
+            display: block;
+            align-items: center;
+            font-size: 20px;
+            height: 50px;
+            line-height: 1.3;
+            padding: 0.6em 1.4em 0.5em 0.8em;
+            width: 200px;
+          }
+        }
+        .swanDataset {
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            height: 100%;
+        }
+      }
+      .right {
+        flex: 1;
+        .scanner {
+            overflow-x: scroll;
+          border-radius: 6px;
+          border: $gray-border 1px solid;
+          height: 100%;
+          background: $claster-bg;
+          padding: 1em;
+          .imgFrame {
+            align-self: center;
+            .leb{
+                border-radius: 8px;
+                border: 1px solid $gray-border;
+                width: 100%;
+            }
+          }
+          .scanInformation {
+            .row {
+              margin: 1em  0;
+              display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+              .imgNaming {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .swansCount {
+                    font-size: small;
+                    .swansCountElement{
+                      color: $input-color;
+                        margin-right: 1em;
+                    }
+                    display: flex;
+                    flex-direction: row;
+                }
+                .swanTitle {
+                  margin-top: 1em;
+                  font-weight: 600;
+                }
+              }
+              .featured {
+              }
+              .date {.element{
+                color: $input-color;
+              }
+                font-size: small;
+              }
+              .result {
+                .element{
+                  color: $input-color;
+                }
+                font-size: small;
+                display: flex;
+                flex-direction: row;
+                
+              }
+            }
+            .notes {
+              width: 100%;
+              textarea {
+                width: 100%;
+                height: 100%;
+                font-size: 20px;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                border-top: 1px solid $input-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bar {
+    .putoshka {
+      height: 55px;
+      font-size: 30px;
+      font-family: "Spartan";
+      font-weight: 500;
+    }
+  }
+
+  .input-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  .input-file span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 4px;
+    background-color: $vk-blue;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: none;
+    margin: 1em 0em;
+    transition: background-color 0.2s;
+  }
+  .input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+   
+  /* Focus */
+  .input-file input[type=file]:focus + span {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+   
+  /* Hover/active */
+  .input-file:hover span {
+    background-color: $vk-blue;
+  }
+  .input-file:active span {
+    background-color: $vk-blue;
+  }
+   
+  /* Disabled */
+  .input-file input[type=file]:disabled + span {
+    background-color: #eee;
+  }
+}

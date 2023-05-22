@@ -1,0 +1,15 @@
+{
+    "12": {
+        "image_id": 12,
+        "file_src": "sdfg",
+        "swans_count": 0,
+        "shipuns_count": 3,
+        "clikuns_count": 1,
+        "small_count": 4,
+        "unrecognized_count": 2,
+        "name": "wedfg",
+        "date": "12.02.2002",
+        "highlighted": false,
+        "notes": ""
+    }
+}

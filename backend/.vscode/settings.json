@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:hacaton-app}/db.sqlite3",
+            "name": "lol",
+            "group": "lol"
+        }
+    ]
+}

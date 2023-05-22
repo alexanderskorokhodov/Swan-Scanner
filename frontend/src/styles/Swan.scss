@@ -1,0 +1,68 @@
+@import "variables.scss";
+
+.swan{
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    background: $claster-bg;
+    box-shadow: 0px 2px 15px rgba(#000000, 0.08);
+    border: 1px solid rgba(#000000, 0.08);
+    margin: 1em 0em;
+    padding: 1em 1em;
+    .swanTop{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+        margin-top: 0.5em;
+        .swanLeft{
+            flex: 15;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 1em;
+            align-items: center;
+            .process{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .processText{
+                    color: $text-gray;
+                    margin-right: 0.2em;
+
+                    font-size: small;
+                }
+            }.name{
+                height: min-content;
+                font-weight: 500;
+                font-size: small;
+                
+            }.date{
+                font-size: small;
+                color: $text-gray;
+                
+            }
+        }
+        .swanRight{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    .swanBottom{
+        color: $text-gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .swanInfo{
+            color: $text-black;
+            font-size: small;
+        }
+    }
+}
+.chosen {
+    border: #000000 1px solid;
+}
