@@ -1,4 +1,4 @@
-### PUTOSHKA Swan Scanner. AI Hackaton May 2023
+# PUTOSHKA Swan Scanner. AI Hackaton May 2023
 
 ## Team
   
